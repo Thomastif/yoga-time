@@ -1,0 +1,453 @@
+@font-face {
+    font-family: "Absolute Beauty Script";
+    src: url("font/absolute-beauty-script-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* h1 100 weight et #d4a15f */
+/* Splash screen */
+
+.splash {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf9f7;
+    animation: splash-fade-out 0.6s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.splash-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.splash-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #5a4a3f;
+    margin-bottom: 8px;
+}
+
+.splash-subtitle {
+    font-family: "Absolute Beauty Script", cursive;
+    font-size: 1.8rem;
+    color: #6b5b4f;
+}
+
+@keyframes splash-fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #faf9f7;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #d4a15f;
+}
+
+article {
+    margin-bottom: 35px;
+}
+
+article h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #6b5b4f;
+    text-transform: uppercase;
+}
+
+article p {
+    color: #555;
+    text-align: justify;
+}
+
+h4 {
+    font-family: "Absolute Beauty Script", cursive;
+    font-size: 1.5rem;
+    color: #6b5b4f;
+}
+
+/* Tarifs */
+
+.tarifs {
+    margin-top: 60px;
+}
+
+.tarifs > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a4a3f;
+}
+
+.tarif-block {
+    margin-bottom: 10px;
+}
+
+.tarif-block h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #6b5b4f;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.tarif-subtitle {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.tarif-block h4,
+.tarif-infos h3 {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5a4a3f;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.tarif-block ul,
+.tarif-infos ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.tarif-block ul li,
+.tarif-infos ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.tarif-block ul li::before,
+.tarif-infos ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.tarif-note {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.tarif-badge {
+    font-size: 0.8rem;
+    background-color: #f0ebe5;
+    color: #6b5b4f;
+    padding: 2px 10px;
+    border-radius: 12px;
+    text-transform: none;
+}
+
+.tarifs hr,
+.tarifs-entreprises hr {
+    border: none;
+    border-top: 1px solid #e0d8d0;
+    margin: 30px 0;
+}
+
+.tarif-infos {
+    margin-bottom: 30px;
+}
+
+.tarif-infos h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #6b5b4f;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tarif-notes p {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Tarifs Entreprises */
+
+.tarifs-entreprises {
+    margin-top: 60px;
+}
+
+.tarifs-entreprises > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a4a3f;
+}
+
+.tarifs-entreprises-intro ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.tarifs-entreprises-intro ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.tarifs-entreprises-intro ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.tarifs-devis {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5a4a3f;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.tarifs-entreprises .tarif-block p {
+    color: #555;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+/* Histoire */
+
+.histoire {
+    margin-top: 60px;
+}
+
+.histoire > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a4a3f;
+}
+
+.histoire > p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.histoire-fragment {
+    text-align: center !important;
+    color: #6b5b4f !important;
+    font-style: italic;
+    line-height: 2 !important;
+    margin: 25px 0 !important;
+}
+
+.histoire-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.histoire-list li {
+    color: #555;
+    padding: 3px 0;
+}
+
+.histoire-list li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.histoire-accent {
+    color: #5a4a3f !important;
+    font-weight: 500;
+    text-align: center !important;
+    line-height: 2 !important;
+    margin: 30px 0 !important;
+}
+
+.histoire-closing {
+    text-align: center !important;
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color: #6b5b4f !important;
+    line-height: 2.2 !important;
+    margin: 35px 0 !important;
+}
+
+/* Certifications */
+
+.certifications {
+    margin-top: 60px;
+}
+
+.certifications > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a4a3f;
+}
+
+.certifications > p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.certifications h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #6b5b4f;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.certifications ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.certifications ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.certifications ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.certification-note {
+    margin-top: 25px;
+    font-style: italic;
+    color: #6b5b4f;
+    text-align: center;
+}
+
+/* Pour qui */
+
+.pour-qui {
+    margin-top: 60px;
+}
+
+.pour-qui > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a4a3f;
+}
+
+.pour-qui > p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.pour-qui-block {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #e0d8d0;
+}
+
+.pour-qui-block h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #6b5b4f;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pour-qui-block ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.pour-qui-block ul li {
+    color: #555;
+    padding: 3px 0;
+}
+
+.pour-qui-block ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.pour-qui-block p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.pour-qui-label {
+    font-weight: 600;
+    color: #5a4a3f !important;
+    margin-top: 15px !important;
+}
+
+.pour-qui-modalites {
+    margin-top: 15px !important;
+    color: #6b5b4f !important;
+    line-height: 2 !important;
+}
+
+.pour-qui-disclaimer {
+    margin-top: 15px !important;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #999 !important;
+    line-height: 1.7 !important;
+}
